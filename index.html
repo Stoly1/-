@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Даниил & Лилия — 22.08.2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Allura&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="aurora" id="aurora">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+</div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="doves-layer" id="dovesLayer"></div>
+
+<header class="topbar">
+    <div class="brand">
+        <span class="brand-mark">D</span>
+        <span class="brand-amp">&</span>
+        <span class="brand-mark">L</span>
+    </div>
+    <nav class="nav">
+        <a href="#program">программа</a>
+        <a href="#dresscode">дресс-код</a>
+        <a href="#gifts">подарки</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-corner top-left"></div>
+    <div class="hero-corner top-right"></div>
+    <div class="hero-corner bottom-left"></div>
+    <div class="hero-corner bottom-right"></div>
+
+    <canvas class="fireworks" id="fireworks" aria-hidden="true"></canvas>
+
+    <div class="hero-inner">
+        <p class="invite-label">
+            <span class="line-decor"></span>
+            <span class="invite-word" id="inviteWord">Свадьба</span>
+            <span class="line-decor"></span>
+        </p>
+
+        <h1 class="couple">
+            <span class="name" data-split>Даниил</span>
+            <span class="amp">&</span>
+            <span class="name" data-split>Лилия</span>
+        </h1>
+
+        <div class="date-block">
+            <span class="d-num">22</span>
+            <span class="d-sep"></span>
+            <span class="d-month">августа</span>
+            <span class="d-sep"></span>
+            <span class="d-num">2026</span>
+        </div>
+
+        <div class="countdown" id="countdown">
+            <div class="cd-item"><span class="cd-num" id="cdDays">00</span><span class="cd-label">дней</span></div>
+            <div class="cd-divider"></div>
+            <div class="cd-item"><span class="cd-num" id="cdHours">00</span><span class="cd-label">часов</span></div>
+            <div class="cd-divider"></div>
+            <div class="cd-item"><span class="cd-num" id="cdMin">00</span><span class="cd-label">минут</span></div>
+            <div class="cd-divider"></div>
+            <div class="cd-item"><span class="cd-num" id="cdSec">00</span><span class="cd-label">секунд</span></div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+            <span class="sh-line"><span></span></span>
+        </div>
+    </div>
+</section>
+
+<section class="section quote-section">
+    <div class="container">
+        <p class="pull-quote reveal">
+            <span class="q-mark">«</span>
+            Любовь — это не то, что мы видим, а то, что мы знаем сердцем
+            <span class="q-mark">»</span>
+        </p>
+    </div>
+</section>
+
+<section class="section program" id="program">
+    <div class="container">
+        <p class="eyebrow reveal">01 — расписание</p>
+        <h2 class="section-title reveal">Программа дня</h2>
+        <p class="section-sub reveal">Будем счастливы разделить этот день с вами</p>
+
+        <div class="timeline">
+            <article class="event reveal">
+                <div class="event-meta">
+                    <span class="event-num">I</span>
+                    <span class="event-time">15:30</span>
+                </div>
+                <div class="event-body">
+                    <h3 class="event-title">Официальная церемония</h3>
+                    <p class="event-place">ЗАГС</p>
+                    <p class="event-address">переулок Старичков, 2</p>
+                    <p class="event-note">Ждём желающих присутствовать в&nbsp;15:00 у входа</p>
+                    <a class="map-link" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=переулок%20Старичков%202">
+                        <span>Открыть на карте</span>
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="event reveal alt">
+                <div class="event-meta">
+                    <span class="event-num">II</span>
+                    <span class="event-time">17:00</span>
+                </div>
+                <div class="event-body">
+                    <h3 class="event-title">Банкет</h3>
+                    <p class="event-place">Банкетный зал «Асти»</p>
+                    <p class="event-address">улица Театральная, 6А</p>
+                    <p class="event-note">Сбор гостей в&nbsp;17:00</p>
+                    <a class="map-link" target="_blank" rel="noopener" href="https://yandex.ru/maps/?text=Банкетный%20зал%20Асти%20Театральная%206А">
+                        <span>Открыть на карте</span>
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section dresscode" id="dresscode">
+    <div class="container">
+        <p class="eyebrow reveal">02 — стиль</p>
+        <h2 class="section-title reveal">Дресс-код</h2>
+        <p class="section-sub reveal">Будем благодарны, если ваш наряд будет выдержан в одном из этих оттенков</p>
+
+        <div class="palette">
+            <figure class="swatch reveal" style="--swatch:#C18EDA">
+                <div class="swatch-color"></div>
+                <figcaption>
+                    <span class="sw-name">Лаванда</span>
+                    <span class="sw-line"></span>
+                </figcaption>
+            </figure>
+            <figure class="swatch reveal" style="--swatch:#F0C5EE">
+                <div class="swatch-color"></div>
+                <figcaption>
+                    <span class="sw-name">Пудра</span>
+                    <span class="sw-line"></span>
+                </figcaption>
+            </figure>
+            <figure class="swatch reveal" style="--swatch:#D7EBFA">
+                <div class="swatch-color"></div>
+                <figcaption>
+                    <span class="sw-name">Небо</span>
+                    <span class="sw-line"></span>
+                </figcaption>
+            </figure>
+            <figure class="swatch reveal" style="--swatch:#FDF4E3">
+                <div class="swatch-color"></div>
+                <figcaption>
+                    <span class="sw-name">Шампань</span>
+                    <span class="sw-line"></span>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section class="section gifts" id="gifts">
+    <div class="container narrow">
+        <p class="eyebrow reveal">03 — подарки</p>
+        <h2 class="section-title reveal">О подарках</h2>
+        <div class="gift-card reveal">
+            <div class="gift-ornament">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 20 L40 20" stroke="currentColor" stroke-width="0.6" fill="none"/>
+                    <path d="M80 20 L120 20" stroke="currentColor" stroke-width="0.6" fill="none"/>
+                    <path d="M50 20 Q60 10 70 20 Q60 30 50 20 Z" stroke="currentColor" stroke-width="0.6" fill="none"/>
+                    <circle cx="60" cy="20" r="1.5" fill="currentColor"/>
+                </svg>
+            </div>
+            <p class="gift-text">
+                Лучший подарок для нас&nbsp;— ваше присутствие рядом в&nbsp;этот день.
+                Если же вам захочется его дополнить, мы&nbsp;будем благодарны
+                за&nbsp;подарок в&nbsp;денежном эквиваленте.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section closing">
+    <div class="container">
+        <p class="closing-eyebrow reveal">с любовью,</p>
+        <h2 class="closing-names reveal">
+            <span class="name">Даниил</span>
+            <span class="amp">&</span>
+            <span class="name">Лилия</span>
+        </h2>
+        <div class="closing-date reveal">
+            <span>22</span>
+            <span class="dot"></span>
+            <span>08</span>
+            <span class="dot"></span>
+            <span>2026</span>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
